@@ -15,16 +15,16 @@ for REPO in $REPOS; do
         git checkout master
         git pull
 
-        if [[ -f package.json ]]; then
-            npm install
+        # if [[ -f package.json ]]; then
+        #     npm install
 
-            LOCALLY=`gfind node_modules -maxdepth 1 -lname '*'`
+        #     LOCALLY=`gfind node_modules -maxdepth 1 -lname '*'`
 
-            if [[ -n $LOCALLY ]]; then
-                echo '------------------------------------------'
-                echo $LOCALLY
-            fi
-        fi
+        #     if [[ -n $LOCALLY ]]; then
+        #         echo '------------------------------------------'
+        #         echo $LOCALLY
+        #     fi
+        # fi
 
         echo '================================================================================'
     fi
